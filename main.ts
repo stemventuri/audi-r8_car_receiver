@@ -17,7 +17,7 @@ radio.onReceivedValue(function (name, value) {
 let steering_speed = 0
 let driving_speed = 0
 driving_speed = 25
-steering_speed = 50
+steering_speed = 75
 let radio_group = 1
 radio.setGroup(radio_group)
 basic.showNumber(radio_group)
