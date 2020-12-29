@@ -12,12 +12,15 @@ radio.onReceivedValue(function (name, value) {
         kitronik_motor_driver.motorOff(kitronik_motor_driver.Motors.Motor2)
     } else if (name == "boost") {
         driving_speed = value * 25
+    } else {
+        kitronik_motor_driver.motorOff(kitronik_motor_driver.Motors.Motor1)
+        kitronik_motor_driver.motorOff(kitronik_motor_driver.Motors.Motor2)
     }
 })
 let steering_speed = 0
 let driving_speed = 0
 driving_speed = 25
-steering_speed = 75
+steering_speed = 85
 let radio_group = 1
 radio.setGroup(radio_group)
 basic.showNumber(radio_group)
